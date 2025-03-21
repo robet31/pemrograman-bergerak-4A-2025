@@ -75,3 +75,23 @@ void main() {
         reason: 'Umur harus berada dalam rentang 15 hingga 99 tahun.');
   });
 }
+
+class DicodingStudent {
+  String fullName;
+  int age;
+
+  DicodingStudent(this.fullName, this.age);
+
+  int incrementAge() {
+    return age + 1;
+  }
+
+  Future<String> getStudentInfo() async {
+    await Future.delayed(Duration(seconds: 3));
+    return 'Nama Lengkap: $fullName, Umur: $age tahun';
+  }
+}
+
+DicodingStudent createStudent() {
+  return DicodingStudent('Abqori Nur Azizi', 18);
+}
