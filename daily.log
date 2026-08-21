@@ -1,1 +1,1 @@
-perf: optimize database query execution - 2026-08-21
+fix: prevent crash on malformed request - 2026-08-21
